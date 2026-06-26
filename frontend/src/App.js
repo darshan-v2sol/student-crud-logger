@@ -246,7 +246,7 @@ function App() {
     const startedAt = new Date().toISOString();
 
     try {
-      pushLogRef.current = null;
+      pushLogRef.current = pushLog;
       pushLogRef.current("─── Cron job started ───", "#56ccf2");
     } catch (err) {
       try {
